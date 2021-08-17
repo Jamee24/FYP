@@ -1,6 +1,6 @@
 import os
 
-path = "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\TrainingImage"
+path = "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\TrainingImage"
 
 # imagePath = [os.path.join(path, f) for f in os.listdir(path)]
 for d in os.listdir(path):

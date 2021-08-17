@@ -29,15 +29,15 @@ def text_to_speech(user_text):
     engine.runAndWait()
 
 
-haarcasecade_path = "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\haarcascade_frontalface_default.xml"
+haarcasecade_path = "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\haarcascade_frontalface_default.xml"
 trainimagelabel_path = (
-    "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\TrainingImageLabel\\Trainner.yml"
+    "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\TrainingImageLabel\\Trainner.yml"
 )
-trainimage_path = "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\TrainingImage"
+trainimage_path = "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\TrainingImage"
 studentdetail_path = (
-    "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\StudentDetails\\studentdetails.csv"
+    "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\StudentDetails\\studentdetails.csv"
 )
-attendance_path = "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\Attendance"
+attendance_path = "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\Attendance"
 
 
 window = Tk()

@@ -11,15 +11,15 @@ import time
 import tkinter.ttk as tkk
 import tkinter.font as font
 
-haarcasecade_path = "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\haarcascade_frontalface_default.xml"
+haarcasecade_path = "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\haarcascade_frontalface_default.xml"
 trainimagelabel_path = (
-    "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\TrainingImageLabel\\Trainner.yml"
+    "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\TrainingImageLabel\\Trainner.yml"
 )
-trainimage_path = "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\TrainingImage"
+trainimage_path = "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\TrainingImage"
 studentdetail_path = (
-    "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\StudentDetails\\studentdetails.csv"
+    "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\StudentDetails\\studentdetails.csv"
 )
-attendance_path = "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\Attendance"
+attendance_path = "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\Attendance"
 # for choose subject and fill attendance
 def subjectChoose(text_to_speech):
     def FillAttendance():
@@ -49,7 +49,7 @@ def subjectChoose(text_to_speech):
                     text_to_speech(e)
                 facecasCade = cv2.CascadeClassifier(haarcasecade_path)
                 df = pd.read_csv(studentdetail_path)
-                cam = cv2.VideoCapture(0,cv2.CAP_DSHOW)
+                cam = cv2.VideoCapture(0, cv2.CAP_DSHOW)
                 font = cv2.FONT_HERSHEY_SIMPLEX
                 col_names = ["Enrollment", "Name"]
                 attendance = pd.DataFrame(columns=col_names)
@@ -224,7 +224,7 @@ def subjectChoose(text_to_speech):
             text_to_speech(t)
         else:
             os.startfile(
-                f"C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\Attendance\\{sub}"
+                f"C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\Attendance\\{sub}"
             )
 
     attf = tk.Button(

@@ -20,7 +20,7 @@ def TakeImage(l1, l2, haarcasecade_path, trainimage_path, message, err_screen,te
         text_to_speech(t)
     else:
         try:
-            cam = cv2.VideoCapture(0)
+            cam = cv2.VideoCapture(0, cv2.CAP_DSHOW)
             detector = cv2.CascadeClassifier(haarcasecade_path)
             Enrollment = l1
             Name = l2
@@ -54,7 +54,7 @@ def TakeImage(l1, l2, haarcasecade_path, trainimage_path, message, err_screen,te
             cv2.destroyAllWindows()
             row = [Enrollment, Name]
             with open(
-                "C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\StudentDetails\\studentdetails.csv",
+                "C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\StudentDetails\\studentdetails.csv",
                 "a+",
             ) as csvFile:
                 writer = csv.writer(csvFile, delimiter=",")

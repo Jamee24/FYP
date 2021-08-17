@@ -13,10 +13,10 @@ def subjectchoose(text_to_speech):
             t='Please enter the subject name.'
             text_to_speech(t)
         os.chdir(
-            f"C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\Attendance\\{Subject}"
+            f"C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\Attendance\\{Subject}"
         )
         filenames = glob(
-            f"C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\Attendance\\{Subject}\\{Subject}*.csv"
+            f"C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\Attendance\\{Subject}\\{Subject}*.csv"
         )
         df = [pd.read_csv(f) for f in filenames]
         newdf = df[0]
@@ -32,7 +32,7 @@ def subjectchoose(text_to_speech):
         root = tkinter.Tk()
         root.title("Attendance of "+Subject)
         root.configure(background="white")
-        cs = f"C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\Attendance\\{Subject}\\attendance.csv"
+        cs = f"C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\Attendance\\{Subject}\\attendance.csv"
         with open(cs) as file:
             reader = csv.reader(file)
             r = 0
@@ -86,7 +86,7 @@ def subjectchoose(text_to_speech):
             text_to_speech(t)
         else:
             os.startfile(
-            f"C:\\Users\\ADMIN\\Desktop\\Attendance System - FYP\\Attendance\\{sub}"
+            f"C:\\Users\\Binod\\OneDrive - MUET\\Desktop\\New Fyp\\FYP-Project\\Attendance\\{sub}"
             )
 
 
